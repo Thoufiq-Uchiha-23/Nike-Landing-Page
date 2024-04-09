@@ -4,7 +4,7 @@ Nike Landing Page is a front-end project made with the tools of Tailwind CSS for
 
 This is Mega-Mon 🔥, I worked to strengthen my core concepts of Tailwind and React, and I gained lots of insights regarding both. Also enhanced my understanding of these technologies 🧑‍💻
 
-Also enabled the Landing Page to be responsive on all screen devices makingit User Friendly UI.
+Also enabled the Landing Page to be responsive on all screen devices making it User Friendly UI.
 
 Here's the Live site 👇
 ## [Nike Landing Page by Thoufiq](https://nike-landing-page-thou.vercel.app/)
