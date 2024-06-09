@@ -1,6 +1,7 @@
 import { headerLogo } from '../assets/images'
 import { hamburger } from '../assets/icons'
 import { navLinks } from '../constants'
+import { useLocation } from 'react-router-dom'
 
 const Nav = () => {
     const pathname = useLocation();
