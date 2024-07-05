@@ -13,13 +13,14 @@ const Nav = () => {
 
   return (
     <header className='padding-x py-8 absolute z-10 w-full'>
+        
         <nav className='flex justify-between items-center max-container'>
             {/* Menu Button */}
-            <div className="fixed top-[20%] inset-y-0 right-[5%] z-[999] lg:hidden">
+            <div className="fixed top-[32px] right-[5%] lg:hidden">
                 <button
                 onClick={toggleMenu}
                 type="button"
-                className="inline-flex transition-all font-bold duration-500 items-center justify-center p-2 rounded-md text-purple-400 hover:text-white hover:bg-purple-500/50"
+                className="inline-flex transition-all font-bold duration-500 items-center justify-center p-2 rounded-full text-coral-red hover:text-black hover:bg-coral-red"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
                 >
@@ -44,7 +45,7 @@ const Nav = () => {
                     navLinks.map((item) => (
                         <li key={item.label}>
                             <a href={item.href}
-                            className={`fonts-montserrat laeding-normal text-lg text-slate-gray`}
+                            className={`fonts-montserrat leading-normal text-lg text-slate-gray`}
                             >
                                 {item.label}
                             </a>
@@ -53,12 +54,12 @@ const Nav = () => {
                 }
             </ul>
             {/* Mobile Screen Menu */}
-            <ul className={`${isOpen ? 'flex' : 'hidden'} flex-1 max-lg:hidden lg:hidden top-0 transition-all max-lg:pt-10 left-0 max-lg:flex-col items-center max-lg:min-h-screen max-lg:w-full max-lg:absolute lg:relative lg:flex-row justify-evenly gap-5 font-bold lg:font-lg backdrop-blur-xl text-3xl lg:text-xl tracking-widest bg-blue-900/90`}>
+            <ul className={`${isOpen ? 'flex' : 'hidden'} flex-1 lg:hidden top-0 transition-all max-lg:pt-10 left-0 max-lg:flex-col items-center max-lg:min-h-screen max-lg:w-full max-lg:absolute lg:relative lg:flex-row justify-evenly gap-5 font-bold lg:font-lg backdrop-blur-xl text-3xl lg:text-xl tracking-widest bg-blue-900/90`}>
                 {
                     navLinks.map((item) => (
                         <li key={item.label}>
                             <a href={item.href}
-                            className='fonts-montserrat laeding-normal text-lg text-slate-gray'
+                            className='fonts-montserrat leading-normal text-lg text-slate-gray'
                             >
                                 {item.label}
                             </a>
