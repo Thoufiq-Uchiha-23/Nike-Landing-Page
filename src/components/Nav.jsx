@@ -19,7 +19,7 @@ const Nav = () => {
                 <button
                 onClick={toggleMenu}
                 type="button"
-                className="inline-flex transition-all font-bold border hover:border-black duration-500 items-center justify-center p-2 rounded-full text-coral-red hover:text-black hover:bg-coral-red"
+                className="inline-flex transition-all font-bold hover:border border-black duration-500 items-center justify-center p-2 rounded-full text-coral-red hover:text-black hover:bg-coral-red"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
                 >
