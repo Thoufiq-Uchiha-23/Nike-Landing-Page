@@ -1,5 +1,5 @@
 import { headerLogo } from '../assets/images'
-import { hamburger } from '../assets/icons'
+import { FaArrowUp } from "react-icons/fa";
 import { navLinks } from '../constants'
 import { useState } from "react";
 import { useLocation } from 'react-router-dom'
@@ -13,14 +13,13 @@ const Nav = () => {
 
   return (
     <header className='padding-x py-8 absolute z-10 w-full'>
-        
         <nav className='flex justify-between items-center max-container'>
             {/* Menu Button */}
-            <div className="fixed top-[32px] right-[5%] lg:hidden">
+            <div className="fixed top-[25px] right-[5%] z-50 lg:hidden">
                 <button
                 onClick={toggleMenu}
                 type="button"
-                className="inline-flex transition-all font-bold duration-500 items-center justify-center p-2 rounded-full text-coral-red hover:text-black hover:bg-coral-red"
+                className="inline-flex transition-all font-bold border hover:border-black duration-500 items-center justify-center p-2 rounded-full text-coral-red hover:text-black hover:bg-coral-red"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
                 >
@@ -54,12 +53,12 @@ const Nav = () => {
                 }
             </ul>
             {/* Mobile Screen Menu */}
-            <ul className={`${isOpen ? 'flex' : 'hidden'} flex-1 lg:hidden top-0 transition-all max-lg:pt-10 left-0 max-lg:flex-col items-center max-lg:min-h-screen max-lg:w-full max-lg:absolute lg:relative lg:flex-row justify-evenly gap-5 font-bold lg:font-lg backdrop-blur-xl text-3xl lg:text-xl tracking-widest bg-blue-900/90`}>
+            <ul className={`${isOpen ? 'flex' : 'hidden'} flex-1 lg:hidden top-0 transition-all z-40 max-lg:pt-10 left-0 max-lg:flex-col items-center max-lg:min-h-screen max-lg:w-full max-lg:absolute lg:relative lg:flex-row justify-evenly gap-5 font-bold lg:font-lg backdrop-blur-xl text-3xl lg:text-xl tracking-widest bg-coral-red/90`}>
                 {
                     navLinks.map((item) => (
                         <li key={item.label}>
                             <a href={item.href}
-                            className='fonts-montserrat leading-normal text-lg text-slate-gray'
+                            className='fonts-montserrat leading-normal text-2xl text-black'
                             >
                                 {item.label}
                             </a>
@@ -67,14 +66,7 @@ const Nav = () => {
                     ))
                 }
             </ul>
-            {/* <div className='hidden max-lg:block'>
-                <img 
-                src={hamburger}
-                alt="Hamburger"
-                width={25}
-                height={25}
-                 />
-            </div> */}
+            <a href="#home" className='fixed bottom-[7%] right-[7%] border border-black bg-coral-red p-3 text-black z-[700] rounded-full'><FaArrowUp /></a>
         </nav>
     </header>
   )
