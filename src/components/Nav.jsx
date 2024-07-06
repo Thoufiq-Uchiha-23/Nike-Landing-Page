@@ -66,7 +66,7 @@ const Nav = () => {
                     ))
                 }
             </ul>
-            <a href="#home" className='fixed bottom-[7%] right-[7%] border border-black bg-coral-red p-3 text-black z-[700] rounded-full'><FaArrowUp /></a>
+            <a href="#home" className='fixed bottom-[7%] lg:hidden right-[7%] border border-black bg-coral-red p-3 text-black z-[700] rounded-full'><FaArrowUp /></a>
         </nav>
     </header>
   )
